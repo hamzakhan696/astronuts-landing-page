@@ -569,7 +569,15 @@ background-color: rgba(0, 168, 180, 1);
     .real-time-content p{
       font-size: 14px !important;
     }
+    .real-time-icon img{
+        margin-left: 165% !important;
+        margin-top: 15% !important;
+    }
     
+}
+.real-time-icon img{
+    margin-left: 75%;
+    margin-top: 45%;
 }
 
 /* Gamification */
@@ -615,12 +623,9 @@ background-color: rgba(0, 168, 180, 1);
     background-color: transparent !important;
     color: #fff;
 }
-.real-time-btn .sign-up:hover i{
-    color: #fff;
-}
+
 .real-time-btn .demo:hover{
-    background-color: #fff;
-    color: #000;
+   background-color: aquamarine;
 }
 .real-time-btn .demo{
     background-color: transparent;
