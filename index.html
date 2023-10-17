@@ -16,8 +16,10 @@
 
 </head>
 <body>
+    <div class="bg-header"></div>
    <div class="container">
-    <nav class="navbar navbar-expand-lg">
+    <div class="header-section">
+    <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
             <img src="images/IMAGE (2).png" width="30" height="30" class="d-inline-block align-top" alt="">
             ASTRONUTS
@@ -29,9 +31,9 @@
                 <span class="custom-toggler-line bottom mt-1" style="background-color: white;"></span>
             </span>
         </button>
-        <div class="collapse navbar-collapse d-md-flex justify-content-between" id="navbarNav">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link text-white" href="#">Product</a>
                 </li>
                 <li class="nav-item">
@@ -45,7 +47,7 @@
                 </li>
             </ul>
             <div class="navbar-btn">
-                <button class="sign-in text-white px-5">Sign In</button>
+                <button class="sign-in text-white px-lg-5">Sign In</button>
                 <button class="Sign-up px-3 py-2">Sign Up</button>
             </div>
         </div>
@@ -54,7 +56,7 @@
       <header>
         <div class="bg-image6 ms-auto"></div>
        <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8" >
             <div class="header-title ml-md-3">
                 <h1>Ai Co-Pilot for software engineering.</h1>
                 <p class="mt-3">Astronuts is your digital VP of Engineering, helping teams like yours ship fewer bugs and increase engineering velocity.</p>
@@ -65,7 +67,7 @@
                           <button class="btn text-white" type="button">Button</button>
                         </div>
                       </div>
-                      <div class="demo-btn mx-md-2 mt-3">
+                      <div class="demo-btn mx-md-2 mt-3 mb-5 mb-md-0">
                         <button class="btn" type="button" >Book a demo
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </button>
@@ -74,13 +76,10 @@
                
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="half-planet mt-5">
-                <img src="images/half-planet.png" alt="half-moon" class="img-fluid">
-            </div>
-            <div class="full-glaxy-section header-glaxy" style="display: none;">
-                <div class="full-glaxy-image d-flex justify-content-center">
-                    <img src="images/planet.png" alt="full-galaxy" class="img-fluid">
+        <div class="col-lg-4">
+            <div class="full-glaxy-section header-glaxy" >
+                <div class="full-glaxy-image">
+                    <img src="images/planet.png" alt="full-galaxy">
                    </div>
                   
                </div>
@@ -88,8 +87,9 @@
        </div>
       
       </header>
+    </div>
    </div>
-   <div class="bg-image"></div>
+   <div class="bg-image productivity-bg"></div>
    <div class="productivity-section mt-1">
     <div class="container">
         <div class="productivity-content">
@@ -129,7 +129,7 @@
     <div class="container">
         <hr class="custom-line">
         <div class="improvement-content">
-           <div class="col-md-8">
+           <div class="col-lg-8">
             <h6>Improvements</h6>
             <h1 class="mt-3">Average 90 day improvements.</h1>
             <p>Gain Insights and remove the  "black box" in software engineering to provide CXOs and Engineering Managers with visibility and guidance.</p>
@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-md-3"> 
                     <div class="box px-4">
-                        <h1 class="ml-4">62%</h1>
+                        <h1 class="ml-lg-4">62%</h1>
                         <p>Decrease in PR <span style="color: rgba(205, 205, 205, 1);">Pickup Time </span></p>
                     </div>
                 </div>
@@ -184,8 +184,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="chart-image">
-                    <img src="images/chart.png" alt="chart-image" class="img-fluid">
+                <div class="chart-image" id="chart-1">
+                    <!-- <img src="images/chart.png" alt="chart-image" class="img-fluid"> -->
                 </div>
             </div>
         </div>
@@ -199,8 +199,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 order-2 order-md-1">
-                <div class="gantt-chart mt-4 mx-md-5">
-                    <img src="images/chart group.png" class="img-fluid" style="width: 80%;" alt="">
+                <div class="gantt-chart mt-4 mx-md-5" id="chart-2">
+                    <!-- <img src="images/chart group.png" class="img-fluid" style="width: 80%;" alt=""> -->
                 </div>
             </div>
             <div class="col-md-4 order-1 order-md-2">
@@ -223,8 +223,8 @@
                 </div>
             </div>
            <div class="col-md-6">
-            <div class="gant-chart2">
-                <img src="images/Chart group (1).png" class="img-fluid" alt="gantt-chart">
+            <div class="gant-chart2" id="chart-3">
+                <!-- <img src="images/Chart group (1).png" class="img-fluid" alt="gantt-chart"> -->
             </div>
            </div>
         </div>
@@ -236,8 +236,8 @@
       <div class="container">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1">
-                <div class="gant-chart ">
-                    <img src="images/gant-chart3.png" class="img-fluid" alt="gant-chart">
+                <div class="gant-chart " id="chart-4">
+                    <!-- <img src="images/gant-chart3.png" class="img-fluid" alt="gant-chart"> -->
                   </div>
             </div>
             <div class="col-md-6 order-1 order-md-2">
@@ -305,7 +305,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="right-content  pt-5">
-                        <div class="px-5">
+                        <div class="px-4">
                         <p>With AstroNuts AI powered intelligent software engineering platform, we will guide you with what actions to take, where to check, which pull requests to approve and what to fix in real time.</p>
                         <div class="Learn-more-btn mx-2 px-4">
                             <button class="btn" type="button" style="border: none;">Discover AstroNuts Actions
@@ -412,7 +412,7 @@
         <img src="images/planet.png" alt="full-galaxy" class="img-fluid">
        </div>
        <div class="space-man">
-        <img src="images/space-man.png" alt="space-man" width="80%">
+        <img src="images/space-man.png" alt="space-man" width="30%">
        </div>
    </div>
 
@@ -490,7 +490,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-   
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -7,6 +7,8 @@ body{
     font-family: 'Helvetica', Arial, sans-serif;
     overflow-x: hidden;
 }
+/* navbar */
+
 .navbar-btn button{
     border: none;
     background-color: transparent;
@@ -15,19 +17,29 @@ body{
     margin-top: 2% !important;
 }
 .navbar-btn .Sign-up{
-    background-color: #000;
-   
     border-top-left-radius: 15px;
     color: #fff;
 }
-.navbar-btn .Sign-up:hover{
-    background-color: rgba(0, 92, 99, 1);
-    color: #fff;
+.navbar-btn .sign-in:hover {
+    color: rgba(235, 245, 255, 0.5) !important;
+  }
+  
+  .navbar-btn .Sign-up:hover {
+    color: rgba(235, 245, 255, 0.5) !important;/* Change to your desired hover text color */
+  }
+.navbar-nav .nav-item .nav-link:hover{
+  color: rgba(235, 245, 255, 0.5) !important;
 }
 .navbar-brand{
     color: #fff;
     font-family: 'Helvetica', Arial, sans-serif;
     font-size: 22px;
+}
+.navbar-brand:hover{
+    color: rgba(235, 245, 255, 0.5) !important;
+}
+.navbar-btn button:hover{
+    color: rgba(235, 245, 255, 0.5) !important;
 }
 .custom-toggler-line {
     background-color: white; /* Change the color of the toggle lines to white */
@@ -39,10 +51,16 @@ body{
     outline: none;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-btn{
-     display: flex;
-     flex-direction: column;
+@media screen and (max-width: 769px) {
+    .navbar-btn {
+        display: flex;
+        flex-direction: row;
+        }
+}
+@media screen and (max-width: 767px) {
+    .navbar-btn {
+    display: flex;
+    flex-direction: column;
     }
     .navbar-nav .active{
         margin-top: 15px;
@@ -73,10 +91,82 @@ body{
     body{
         overflow-x: hidden;
     }
+    header .full-glaxy-image{
+        margin-left: -100% !important;
+    }
   }
+ 
+  @media screen and (max-width: 769px) {
+    header .full-glaxy-image{
+        margin-top: -10% !important;
+        margin-left: 20% !important;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    header .full-glaxy-image{
+        margin-left: 20% !important;
+    }
+  }
+  @media screen and (max-width: 448px) {
+    header .full-glaxy-image{
+        margin-left: 10% !important;
+    }
+  }
+ 
 
 /* header */
-
+.bg-header{
+    background-image: url("images/bg\ -header.jpg");
+     background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.header-section{
+    margin-top: -45% !important;
+}
+@media screen and (max-width: 1080px) {
+    .header-section{
+        margin-top: -52% !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .header-section{
+        margin-top: -68% !important;
+    }
+}
+@media screen and (max-width: 850px) {
+    .header-section{
+        margin-top: -70% !important;
+    }
+    @media screen and (max-width: 580px) {
+        .header-section{
+            margin-top: -100% !important;
+        }
+    }
+    @media screen and (max-width: 440px) {
+        .header-section{
+            margin-top: -130% !important;
+        }
+    }
+    @media screen and (max-width: 402px) {
+        .header-section{
+            margin-top: -135% !important;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .header-section{
+            margin-top: -145% !important;
+        }
+    }
+    @media screen and (max-width: 340px) {
+        .header-section{
+            margin-top: -192% !important;
+        }
+    }
+}
+.productivity-bg{
+    margin-top: -20% !important;
+}
 .header-title h1{
     font-family: 'Helvetica', Arial, sans-serif;
     line-height: -0.96 px;
@@ -105,11 +195,7 @@ body{
     background-color: rgba(0, 92, 99, 1);
     color: #fff;
 }
-.half-planet img{
-  margin-top: -30%;
-  margin-left: 34%;
-    
-}
+
 .box:hover{
 background-color:rgba(0, 92, 99, 1) ;
 color: rgba(0, 168, 180, 1);
@@ -142,14 +228,44 @@ color: rgba(0, 168, 180, 1);
     height: 100px;
     overflow-x: hidden;
 }
+.header-glaxy{
+    margin-left: 130% !important;
+    margin-top: -30%;
+}
+.header-glaxy img{
+    width: 800px !important;
+}
+
 @media screen and (max-width: 992px) {
-    .half-planet img{
-        display: none;
-    }
+    
     .header-glaxy{
-        display: block !important;
+        width: 100% !important;
+        margin-left: 0% !important;
+        margin-top: 0%;
     }
+    .header-title h1{
+       font-size: 48px;
+    }
+    .header-buttons .input-group{
+        width: 100% !important;
+    }
+    .demo-btn button{
+        width: 100% !important;
+    }
+    .productivity-content p{
+        margin-top: 15%;
+        font-size: 38px !important;
+    }
+    .image-container{
+        margin-top: 5%;
+    }
+    .collaborating-text h1{
+        font-size: 38px !important;
   }
+  .code-quality h1{
+    font-size: 48px !important;
+  }
+}
 /* section-1 */
 .productivity-content p{
     font-size: 48px;
@@ -157,29 +273,58 @@ color: rgba(0, 168, 180, 1);
     color: #fff;
     font-family: 'Helvetica', Arial, sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .productivity-content p{
         font-size: 38px;
     }
+    
     .box{
         text-align: center;
+    }
+    .box{
+        text-align: center;
+        margin-bottom: 4%;
     }
     .box h1{
         font-size: 54px !important;
     }
+    .team-question h1{
+        font-size: 45px !important;
   }
+  .developer-section h1{
+    font-size: 48px !important;
+}
+.copilot-section{
+    margin-top: -55% !important;
+}
+.documentation-image img{
+    margin-top: -47% !important;
+}
+
+    .real-time-section {
+        margin-top: -105% !important;
+    }
+
+}
   @media screen and (max-width: 564px) {
     .productivity-content p{
         font-size: 24px;
     }
     .productivity-section{
-        margin-top: -10% !important;
+        margin-top: -22% !important;
     }
     .improvement-section{
         margin-top: -12% !important;
     }
     .insight-section{
         margin-top: -15%;
+    }
+    .header-glaxy{
+        margin-left: 0% !important;
+        margin-top: -30%;
+    }
+    .header-glaxy img{
+        width: 500px !important;
     }
     .logos img{
         margin: 0px !important;
@@ -194,15 +339,18 @@ color: rgba(0, 168, 180, 1);
         font-size:16px !important;
         color: #fff;
     }
-    .box{
-        text-align: center;
-        margin-bottom: 4%;
-    }
+    
     .box h1{
         font-size: 34px !important;
     }
     .improvement-content p{
         font-size: 12px !important;
+    }
+    .documentation-image img{
+        margin-top: 0% !important;
+    }
+    .real-time-section {
+        margin-top: -225% !important;
     }
   }
 .productivity-content h6{
@@ -409,6 +557,9 @@ background-color: rgba(0, 168, 180, 1);
     font-size: 20px;
     font-family: 'Helvetica', Arial, sans-serif;
 }
+.Learn-more-btn button:hover{
+    color: #fff;
+}
 .Gamification-image{
     margin-top: -72%;
 }
@@ -426,6 +577,11 @@ background-color: rgba(0, 168, 180, 1);
     .left-content p{
         font-size: 16px !important;
     }
+    .copilot-section{
+        margin-top: -105% !important;
+    }
+}
+@media screen and (max-width: 440px) {
     .copilot-section{
         margin-top: -135% !important;
     }
@@ -457,6 +613,7 @@ background-color: rgba(0, 168, 180, 1);
         margin-top: 5%;
     }
 }
+
 /* astronuts-mobile-content */
 .astronuts-mobile-content .left-content p{
     color: rgba(235, 245, 255, 0.5);
@@ -537,6 +694,17 @@ background-color: rgba(0, 168, 180, 1);
 .real-time-section {
      margin-top: -68%;   
 }
+@media screen and (max-width: 612px) {
+    .documentation-image{
+        margin-top: -150% !important;
+    }
+    .Gamification-image{
+        margin-top: -150%;
+    }
+    .real-time-section {
+        margin-top: -152% !important;   
+   }
+}
 @media screen and (max-width: 512px) {
     .documentation-content h1{
         font-size: 26px;
@@ -545,7 +713,7 @@ background-color: rgba(0, 168, 180, 1);
         margin-top: -200% !important;
     }
     .real-time-section {
-        margin-top: -222%;   
+        margin-top: -222% !important;   
    }
     .documentation-content p,.Gamification-content p{
         font-size: 15px;
@@ -556,6 +724,9 @@ background-color: rgba(0, 168, 180, 1);
     }
     .Gamification-section{
         margin-top: 10%;
+    }
+    .Gamification-image{
+        margin-top: -190%;
     }
     .real-time-content h2{
         font-size: 22px !important;
@@ -653,12 +824,16 @@ position: relative;
     top: 20% !important;
 } */
 .full-glaxy-image {
-    margin-top: -15%;
-    margin-bottom: 10%;
+    margin-top: -12% !important;
+    margin-bottom: 10% !important;
     animation-name: spin;
     animation-duration: 8000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     
 }
 @media screen and (max-width: 512px) {
@@ -667,9 +842,11 @@ position: relative;
        margin-left: 10%;
     }
     .space-man img{
-        width: 50%;
+        width: 30%;
     }
 }
+
+
 @keyframes spin {
     0%{
         transform: rotate(0deg);
@@ -677,10 +854,10 @@ position: relative;
         transform: rotate(360deg);
     }
 }
-@keyframes mover {
+/* @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-30px); }
-}
+} */
     
 .full-glaxy-section{
     position: relative;
@@ -688,8 +865,12 @@ position: relative;
 .space-man{
     position: absolute;
     top: 60%;
-    left: 18%;
-    animation: mover 1s infinite  alternate;
+    left: 22%;
+    /* animation: mover 1s infinite  alternate; */
+}
+.space-man:hover{
+    transform: translateY(-30px);
+    transition: all .4s ease-in-out;
 }
 
 /* footer */
